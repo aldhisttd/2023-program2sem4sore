@@ -9,11 +9,6 @@
       <label>Password:</label>
       <input type="password" name="password" placeholder="password..." />
     </p>
-    <p>
-      <label><input type="checkbox" name="remember" value="remember" /> Remember me</label>
-    </p>
-    <p>
-      <input type="submit" name="submit" value="Login" />
-    </p>
+
   </fieldset>
 </form>
