@@ -26,10 +26,3 @@ if(isset($_POST['btn_submit'])){
 }else{
     header("location:index.php");
 }
-
-
-?>
-
-
-
-
