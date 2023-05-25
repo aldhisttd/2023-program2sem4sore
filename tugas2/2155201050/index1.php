@@ -20,7 +20,6 @@
     <label for="">Spec</label> <br>
     <input type="textarea" name="spec">
 
-
     <br>
 
     <label for="">Harga</label><br>
@@ -29,8 +28,12 @@
       <option value="10.000.000">10.000.000</option>
       <option value="10.300.000">10.300.000</option>
       <option value="10.500.000">10.500.000</option>
-
     </select>
+    <br>
+
+    <label for="">Photo</label> <br>
+    <input type="file" name="photo">
+
     <br>
     <br>
     <input type="submit" name="btn_submit" value="simpan">
