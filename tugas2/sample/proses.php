@@ -1,7 +1,7 @@
 <?php
 
 
-if(isset($_POST['btn_submit'])){
+if(isset($_POST["btn_submit"])){
 
     $vNik = $_POST['nik'];
     $vNama = $_POST['nama'];
