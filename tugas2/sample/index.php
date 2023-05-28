@@ -10,7 +10,7 @@
 
     <h1>Form Data Pasien</h1>
 
-    <form action="proses.php" method="POST">
+    <form action="proses1.php" method="POST">
 
         <label for="">NIK</label><br>
         <input type="text" name="nik">
