@@ -11,24 +11,19 @@
 <body>
   <h1>Form Data Laptop Baru</h1>
 
-  <form action="proses1.php" method="POST">
-    <label for="">Merek</label> <br>
-    <input type="text" name="merek">
+  <form action="proses1.php" method="POST" enctype="multipart/form-data">
+    <label for="">Merk</label> <br>
+    <input type="text" name="merk">
 
     <br>
 
     <label for="">Spec</label> <br>
-    <input type="textarea" name="spec">
+    <textarea cols="30" name="spec"> </textarea>
 
     <br>
 
     <label for="">Harga</label><br>
-    <select name="harga">
-      <option value="-">0</option>
-      <option value="10.000.000">10.000.000</option>
-      <option value="10.300.000">10.300.000</option>
-      <option value="10.500.000">10.500.000</option>
-    </select>
+    <input type="number" name="harga">
     <br>
 
     <label for="">Photo</label> <br>

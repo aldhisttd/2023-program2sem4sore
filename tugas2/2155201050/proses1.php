@@ -1,37 +1,29 @@
 <?php
+$target_dir = "image/";
+$target_file = $target_dir . basename($_FILES["photo"]["name"]);
+$uploadok = 1;
+$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 if (isset($_POST['btn_submit'])) {
 
-  $vMerek = $_POST['merek'];
+  $vMerk = $_POST['merk'];
   $vSpec = $_POST['spec'];
   $vHarga = $_POST['harga'];
 
-  echo "Merek : " . $vMerek;
+  echo "Merk : " . $vMerk;
   echo "<br>";
   echo "Spec : " . $vSpec;
   echo "<br>";
   echo "Harga : " . $vHarga;
   echo '<br>';
-  echo "Photo :";
-  echo '<br>';
-} else {
-  header("location:index1.php");
+  echo "Gambar : ";
+  echo "<br>";
 }
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>proses</title>
-</head>
-
-<body>
-  <ul>
-    <li><img src="image/laptop.jpg" width="120px"></li>
-  </ul>
-</body>
-
-</html>
+if ($uploadok == 0) {
+  echo "Upload file terlebih dahulu";
+} else {
+  if (move_uploaded_file($_FILES["photo"]["tmp_name"], $target_file)) {
+    echo "<img src='$target_file' width='200' height='200'>";
+    echo "<br>";
+  }
+}
