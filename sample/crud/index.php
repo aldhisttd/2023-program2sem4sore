@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <?php include "component/menu.php" ?>
     
     <form action="proses/ex_barang.php" method="POST" enctype="multipart/form-data">
 
