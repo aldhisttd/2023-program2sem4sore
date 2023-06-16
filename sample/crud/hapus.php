@@ -13,3 +13,5 @@ unlink("gambar/".$gambar);
 mysqli_query($koneksi, "DELETE FROM barang WHERE kode_barang='$kode'");
 
 header("location:data.php");
+
+?>
