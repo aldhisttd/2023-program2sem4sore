@@ -1,7 +1,9 @@
 <?php 
 session_start();
 include "koneksi.php";
-
+if(isset($_SESSION['username'])){
+  header("location:admin.php");
+}
 if(isset($_POST['login'])){
   $username = $_POST["username"];
   $password = $_POST["pass"];
