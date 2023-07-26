@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz LOGIN DB (PERBAIKAN)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>LOGIN DB (Perbaikan)</u></h2>
+    <h4>Pilihan Soal</h4>
+    <ol>
+        <li>Seri soal ada 2, GENAP dan GANJIL</li>
+        <li>Silahkan pilih soal sesuai dengan angka digit terakhir NIM kalian, Ganjil atau Genap</li>
+        <li>Untuk angka digit akhir 0, pilih yang GENAP</li>
+    </ol>
+
+    <h4>Instruksi</h4>
+    <ol>
+        <li>Source branch = <code><strong>main</strong></code></li>
+        <li>Ketentuan nama branch : <code><strong>perbaikan/logindb_NIM</strong></code></li>
+        <li>Jika sudah selesai lakukan PR dengan judul PR : <code><strong>perbaikan/logindb/NIM/NAMA_LENGKAP</strong></code></li>
+        <li>Mention saya di bagian description PR kalian</li>
+        <li>Add saya sebagai Reviewer di PR kalian</li>
+
+    </ol>
+
+    <h4>Soal</h4>
+    <ol>
+        <li>Lokasi project berada di folder <code><strong>quiz/perbaikan/logindb/NIM</strong></code></li>
+        <li>Buat sistem login dengan multi user dan multi role dengan ketentuan table dibawah</li>
+        <li>Lengkapi semua validasi nya</li>
+        <li>Pastikan semua data login berasal dari database</li>
+
+    </ol>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Ganjil</h4>
+                <table>
+                    <tr>
+                        <th>User/Password</th>
+                        <th>Nama Role</th>
+                        <th>Akses</th>
+                    </tr>
+                    <tr>
+                        <td>admin_ganjil/admin_ganjil</td>
+                        <td>Admin ganjil</td>
+                        <td>halaman admin & user</td>
+                    </tr>
+                    <tr>
+                        <td>user_ganjil/user_ganjil</td>
+                        <td>User Ganjil</td>
+                        <td>halaman user</td>
+                    </tr>
+                    
+                </table>
+            </td>
+
+            <td>
+                <h4>Genap</h4>
+                <table>
+                    <tr>
+                        <th>User/Password</th>
+                        <th>Nama Role</th>
+                        <th>Akses</th>
+                    </tr>
+                    <tr>
+                        <td>admin_genap/admin_genap</td>
+                        <td>Admin genap</td>
+                        <td>halaman admin & user</td>
+                    </tr>
+                    <tr>
+                        <td>user_genap/user_genap</td>
+                        <td>User genap</td>
+                        <td>halaman user</td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+</html>

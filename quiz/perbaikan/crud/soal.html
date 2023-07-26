@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz CRUD (PERBAIKAN)</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><u>CRUD (Perbaikan)</u></h2>
+
+    <h4>Pilihan Soal</h4>
+    <ol>
+        <li>Seri soal ada 2, GENAP dan GANJIL</li>
+        <li>Silahkan pilih soal sesuai dengan angka digit terakhir NIM kalian, Ganjil atau Genap</li>
+        <li>Untuk angka digit akhir 0, pilih yang GENAP</li>
+    </ol>
+
+    <h4>Instruksi</h4>
+    <ol>
+        <li>Source branch = <code><strong>main</strong></code></li>
+        <li>Ketentuan nama branch : <code><strong>perbaikan/crud_NIM</strong></code></li>
+        <li>Jika sudah selesai lakukan PR dengan judul PR : <code><strong>perbaikan/crud/NIM/NAMA_LENGKAP</strong></code></li>
+        <li>Mention saya di bagian description PR kalian</li>
+        <li>Add saya sebagai Reviewer di PR kalian</li>
+
+    </ol>
+
+    <h4>Soal</h4>
+    <ol>
+        <li>Lokasi project berada di folder <code><strong>quiz/perbaikan/crud/NIM</strong></code></li>
+        <li>Buat nama database sesuai dengan NIM kalian masing-masing</li>
+        <li>Table Name, Field Name & Data Type harus sesuai dan identik dengan data table kalian</li>
+        <li>Input Type mengacu pada jenis form</li>
+        <li>Jangan lupa screenshot aplikasi dan database nya dan lampirkan di bagian description</li>
+
+    </ol>
+
+    <table>
+        <tr>
+            <td>
+                <h4>Ganjil</h4>
+                <table>
+                    <tr>
+                        <th colspan="4">Table Name = laptop</th>
+                    </tr>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Data Type</th>
+                        <th>Input Type</th>
+                    </tr>
+                    <tr>
+                        <td>kode</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>tanggal_masuk</td>
+                        <td>date</td>
+                        <td>input date</td>
+                    </tr>
+                    <tr>
+                        <td>jenis</td>
+                        <td>string</td>
+                        <td>select option (Office, Gaming, Content Creator)</td>
+                    </tr>
+                    <tr>
+                        <td>quantity</td>
+                        <td>number</td>
+                        <td>number</td>
+                    </tr>
+                    <tr>
+                        <td>spesifikasi</td>
+                        <td>text</td>
+                        <td>textarea</td>
+                    </tr>
+                    <tr>
+                        <td>gambar</td>
+                        <td>string</td>
+                        <td>input file (upload file gambar)</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <h4>Genap</h4>
+                <table>
+                    <tr>
+                        <th colspan="4">Table Name = software</th>
+                    </tr>
+                    <tr>
+                        <th>Field Name</th>
+                        <th>Data Type</th>
+                        <th>Input Type</th>
+                    </tr>
+                    <tr>
+                        <td>sn</td>
+                        <td>string</td>
+                        <td>input text</td>
+                    </tr>
+                    <tr>
+                        <td>tanggal_rilis</td>
+                        <td>date</td>
+                        <td>input date</td>
+                    </tr>
+                    <tr>
+                        <td>jenis</td>
+                        <td>string</td>
+                        <td>select option (Editing, Coding, Tools)</td>
+                    </tr>
+                    <tr>
+                        <td>quantity</td>
+                        <td>integer</td>
+                        <td>number</td>
+                    </tr>
+                    <tr>
+                        <td>spesifikasi</td>
+                        <td>text</td>
+                        <td>textarea</td>
+                    </tr>
+                    <tr>
+                        <td>gambar</td>
+                        <td>string</td>
+                        <td>input file (upload file gambar)</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+</html>
