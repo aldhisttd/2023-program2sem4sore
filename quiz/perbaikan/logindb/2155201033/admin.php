@@ -5,7 +5,7 @@ if (!isset($_SESSION['login'])) {
     header('location:form_login.php');
 }
 
-if ($_SESSION['role'] == 'user') {
+if ($_SESSION['role'] == 'user_ganjil') {
     header('location:user.php');
 }
 

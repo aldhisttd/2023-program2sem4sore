@@ -28,12 +28,12 @@ if (isset($_POST['login'])) {
 
         if ($admin_row) {
             $_SESSION['login'] = $admin_row['useradmin'];
-            $_SESSION['role'] = 'admin';
+            $_SESSION['role'] = 'admin_ganjil';
             header('location: admin.php');
             exit;
         } elseif ($user_row) {
             $_SESSION['login'] = $user_row['username'];
-            $_SESSION['role'] = 'user';
+            $_SESSION['role'] = 'user_ganjil';
             header('location: user.php');
             exit;
         } else {
