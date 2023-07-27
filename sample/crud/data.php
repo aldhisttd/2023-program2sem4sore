@@ -48,7 +48,7 @@ tr:nth-child(even) {
             <td><?php echo $row['satuan'] ?></td>
             <td><?php echo $row['harga'] ?></td>
             <td>
-                <img src="gambar/<?php echo $row['gambar'] ?>" width="100">
+                <embed src="file/<?php echo $row['file_ebook'] ?>.pdf" type="">
             </td>
             <td>
                 <a href="hapus.php?kode=<?php echo $row['kode_barang'] ?>">Hapus</a> - 
