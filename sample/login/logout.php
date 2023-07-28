@@ -1,6 +1,5 @@
 <?php 
 session_start();
-unset($_SESSION["login_admin"]);
-unset($_SESSION["login_general"]);
+unset($_SESSION["login"]);
 header('location:form_login.php');
 ?>
