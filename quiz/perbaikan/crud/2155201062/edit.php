@@ -12,17 +12,17 @@ if (isset($_POST['edit'])) {
     $spek = $_POST['spesifikasi'];
 
     if ($_FILES['gambar']['name'] != "") {
-        // ambil nama gambar lama
+        
         $q = mysqli_query($conn, "SELECT gambar FROM software WHERE sn='$sn'");
         $ary = mysqli_fetch_array($q);
         $gambarLama = $ary['gambar'];
-        // hapus gambar lama
+        
         unlink("img/" . $gambarLama);
-        // upload gambar baru
+        
         $gambar = basename($_FILES["gambar"]["name"]);
         $target_file = "img/" . basename($_FILES["gambar"]["name"]);
         move_uploaded_file($_FILES["gambar"]["tmp_name"], $target_file);
-        // update nama gambar ke gambar baru
+        
         $gambarBaru = $_FILES["gambar"]["name"];
         mysqli_query($conn, "UPDATE software SET gambar='$gambarBaru' WHERE sn='$sn'");
     }

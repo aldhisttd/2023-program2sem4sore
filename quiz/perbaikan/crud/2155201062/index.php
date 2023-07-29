@@ -25,11 +25,11 @@ if (isset($_POST['tambah'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tambah Data</title>
+    <title>penambahan Data</title>
 </head>
 
 <body>
-    <h1>Tambah Data</h1>
+    <h1>Penambahan Data</h1>
     <a href="data.php">Lihat Data</a><br><br>
 
     <form action="" method="POST" enctype="multipart/form-data">

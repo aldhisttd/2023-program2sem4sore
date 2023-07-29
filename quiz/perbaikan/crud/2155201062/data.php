@@ -28,7 +28,7 @@
 
 <body>
     <h1> Data</h1>
-    <a href="index.php">Tambah Data</a><br><br>
+    <a href="index.php">Penambahan Data</a><br><br>
 
     <table>
         <tr>
