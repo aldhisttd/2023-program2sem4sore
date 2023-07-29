@@ -12,10 +12,10 @@ if(isset($_POST['login'])){
     $passuser_ganjil = $_POST['pass'];
 
 
-    $userBenar = "admin ganjil";
-    $passBenar = "admin ganjil";
-    $useruser_ganjil = "user ganjil";
-    $passuser_ganjil= "user ganjil";
+    $userBenar = "admin_ganjil";
+    $passBenar = "admin_ganjil";
+    $useruser_ganjil = "user_ganjil";
+    $passuser_ganjil= "user_ganjil";
 
     if($userForm == $userBenar && $passForm == $passBenar){
         // login
