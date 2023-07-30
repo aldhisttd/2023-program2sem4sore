@@ -7,27 +7,27 @@ if(isset($_SESSION['login'])){
 
 if(isset($_POST['login'])){
     $userForm = $_POST['username'];
-    $useruser_ganjil = $_POST['username'];
+    $useruser_genap = $_POST['username'];
     $passForm = $_POST['pass'];
-    $passuser_ganjil = $_POST['pass'];
+    $passuser_genap = $_POST['pass'];
 
 
-    $userBenar = "admin_ganjil";
-    $passBenar = "admin_ganjil";
-    $useruser_ganjil = "user_ganjil";
-    $passuser_ganjil= "user_ganjil";
+    $userBenar = "admin_genap";
+    $passBenar = "admin_genap";
+    $useruser_genap = "user_genap";
+    $passuser_genap = "user_genap";
 
     if($userForm == $userBenar && $passForm == $passBenar){
         // login
         $_SESSION['login'] = $userBenar;
         // redirect ke hal admin
-        header('location:admin_ganjil.php');
+        header('location:admin_genap.php');
     }
-    elseif($useruser_ganjil == $useruser_ganjil && $passuser_ganjil == $passuser_ganjil){
+    elseif($useruser_genap == $useruser_genap && $passuser_genap == $passuser_genap){
 
-        $_SESSION['login'] = $useruser_ganjil;
+        $_SESSION['login'] = $useruser_genap;
         // redirect ke hal admin
-        header('location:user_ganjil.php');
+        header('location:user_genap.php');
     }
     else{
         echo "Username dan Password yang anda Masukkan Salah";
