@@ -57,8 +57,8 @@ while ($row = mysqli_fetch_array($data)) {
     <td><?php echo $row['spesifikasi']; ?></td>
     <td><img src="gambar/<?php echo $row['gambar'];?>" width="100"></td>
     <td>
-      <a href="hapus.php?kode=<?php echo $row['kode'] ?>">Hapus</a> - 
-      <a href="edit.php?kode=<?php echo $row['kode'] ?>">Edit</a>
+      <a href="hapus.php?sn=<?php echo $row['sn'] ?>">Hapus</a> - 
+      <a href="edit.php?sn=<?php echo $row['sn'] ?>">Edit</a>
     </td>
   	</tr>
  <?php 

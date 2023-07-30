@@ -43,13 +43,13 @@
 <?php include "component/menu.php" ?>
 <?php 
 include "proses/koneksi.php";
-    $kode = $_REQUEST['kode'];
-    $q = mysqli_query($conn, "SELECT * FROM software WHERE kode='$kode'");
+    $sn = $_REQUEST['sn'];
+    $q = mysqli_query($conn, "SELECT * FROM software WHERE sn='$sn'");
     $ary = mysqli_fetch_array($q);
  ?>
 <div>
 	<h1>Form Edit Data Software</h1>
-<form action="proses/ex_edit.php?kode=<?php echo $ary['kode']; ?>" method="POST" enctype="multipart/form-data">
+<form action="proses/ex_edit.php?sn=<?php echo $ary['sn']; ?>" method="POST" enctype="multipart/form-data">
 	<label for="">SN</label>
 	<input type="text" name="sn" value="<?php echo $ary['sn'] ?>">
 	<br>
